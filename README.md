@@ -59,7 +59,9 @@ docker run -it dockerized-ra-on-mac:latest bash
 After the container has been launched, start the installation process:
 
 ```bash
-. /etc/profile && /home/installer.sh
+. /etc/profile
+cd home
+./installer.sh
 ```
 
 When the original installation script completes, the following error should be visible:

@@ -10,7 +10,8 @@ RUN apt-get update && \
     cmake \
     curl \
     nano \
-    ca-certificates
+    ca-certificates \
+    patch
 
 # Update faulty locale initialization
 RUN printf '%s\n%s\n' "export LANG=en_US.UTF-8" "$(cat /etc/profile)" > /etc/profile && \
